@@ -1,4 +1,5 @@
 Prédictions autour des données de recensement
+=====
 ~~~~~
 
 Le but est de prédire le niveau de revenu d'une personne _(si la personne gagne plus de $50k ou pas)_ à partir d'autres données sur celle-ci.
