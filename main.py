@@ -4,8 +4,9 @@ import pandas
 import random
 import config
 from config import file_name
-from pandas import DataFrame
-import matplotlib.pyplot as plt
+from pandas import DataFrame, Series
+from sklearn.ensemble import ExtraTreesClassifier, RandomForestClassifier
+from sklearn.feature_selection import VarianceThreshold as VarT
 
 NR_TRAIN = 199523
 NR_TEST  = 99762
