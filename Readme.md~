@@ -8,8 +8,7 @@ La démarche suivie ainsi que les étapes seront explicitées ci dessous:
 
 + A première vue, après avoir regardé les données juste question d'avoir une intuition sur celles-ci, plusieurs facteurs paraissent pouvoir agir sur le revenu tel que l'age, l'éducation etc. 
 
-+ Après avoir chargé les données, juste par curiosité j'ai essayé de visulasier l'influence de l'age sur le revenu, mais celle ci ne paraissait pas avoir une influence vu les distributions des ages chez les personnes gagnants plus de $50k et celles gagnant moins. Mais celà bien sûr ne suffit pas pour conclure et faire celà pour toutes les caractéristiques pourrait prendre du temps. Il faut choisir les caractéristiques les plus significatives *(feature selection)* .
- 
++ Après avoir chargé les données, juste par curiosité j'ai essayé de visulasier l'influence de l'age sur le revenu, mais celle ci ne paraissait pas avoir une influence vu les distributions des ages chez les personnes gagnants plus de $50k et celles gagnant moins. Mais celà bien sûr ne suffit pas pour conclure et faire celà pour toutes les caractéristiques pourrait prendre du temps 
 + 
 
 

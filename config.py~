@@ -1,23 +1,5 @@
 # -*- coding: utf-8 -*-
-## Dedupe Utilities
-def compare(field1, field2):
-    if field1 and field2 :
-        if field1 == field2 :
-            return 1
-        else:
-            return 0
-    else :
-        return npy.nan
-## Useful definitions
-file_name = {
-            'input'   : 'data/census_income_learn.csv',
-            'test'    : 'data/census_income_test.csv',
-            'output'  : 'output_data.csv',
-            'setting' : 'settings',
-            'training': 'training_features.json'
-            }
 
-## Census data
 column_names = ['age',
     'class of worker',
     'industry code',
