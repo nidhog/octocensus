@@ -13,6 +13,8 @@ La démarche suivie ainsi que les étapes seront explicitées ci dessous:
 + Choisir les bonnes caractéristiques va permettre de réduire les dimension et d'enlever les caractéristiques non significatives. Petit problème, les données ne sont pas toutes numérique (des fonctions telles que matplotlib.pyplot ne fonctionnent pas sur les str par exemple), il va falloire transformer les données avant. J'ai essayé de faire un mapping (voir la fonction data_to_numbers) avec. 
 - Remarque: la fonction deep_copy crée une copie de l'objet pandas.DataFrame (ce n'est pas une simple référence à l'objet, mais un objet différent avec les mêmes valeurs d'attributs)
 
++ Je n'ai pas réussi à calculer la variance pour les différentes caractéristique afin de me baser sur un seuil de variance.
+
 
 
 

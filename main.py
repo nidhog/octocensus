@@ -84,9 +84,5 @@ initial_feature_set = config.column_names
 selected_features   = initial_feature_set
 print '> Initial set of features: '
 print initial_feature_set
-score = {}
-for feature in initial_feature_set:
-    score[feature]=0
-reverse_score =  {v: k for k, v in score.items()}
 
 
