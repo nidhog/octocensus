@@ -10,13 +10,14 @@ La démarche suivie ainsi que les étapes seront explicitées ci dessous:
 
 + Après avoir chargé les données, juste par curiosité j'ai essayé de visulasier l'influence de l'age sur le revenu, mais celle ci ne paraissait pas avoir une influence vu les distributions des ages chez les personnes gagnants plus de $50k et celles gagnant moins. Mais celà bien sûr ne suffit pas pour conclure et faire celà pour toutes les caractéristiques pourrait prendre du temps. Il faut choisir les caractéristiques les plus significatives *(feature selection)* .
  
-+ 
++ Choisir les bonnes caractéristiques va permettre de réduire les dimension et d'enlever les caractéristiques non significatives. Petit problème, les données ne sont pas toutes numérique (des fonctions telles que matplotlib.pyplot ne fonctionnent pas sur les str par exemple), il va falloire transformer les données avant. J'ai essayé de faire un mapping (voir la fonction data_to_numbers) avec. 
+- Remarque: la fonction deep_copy crée une copie de l'objet pandas.DataFrame (ce n'est pas une simple référence à l'objet, mais un objet différent avec les mêmes valeurs d'attributs)
 
 
 
 
 
-
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Les données ont été extrates de la "census bureau database" trouvée à:
 | http://www.census.gov/ftp/pub/DES/www/welcome.html
 | Donor: Terran Lane and Ronny Kohavi
