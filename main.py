@@ -77,3 +77,15 @@ print '> Training data percentage: ',(float(nr_train)/(nr_train+nr_test))*100,'%
 #
 print '=='*15,' INITIALIZED ','=='*15
 
+## FEATURE SELECTION AND CLASSIFICATION
+print '=='*15,' CLASSIFICATION ','=='*15
+initial_feature_set = config.column_names
+selected_features   = initial_feature_set
+print '> Initial set of features: '
+print initial_feature_set
+score = {}
+for feature in initial_feature_set:
+    score[feature]=0
+reverse_score =  {v: k for k, v in score.items()}
+
+
