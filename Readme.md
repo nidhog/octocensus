@@ -15,6 +15,36 @@ La démarche suivie ainsi que les étapes seront explicitées ci dessous:
 
 + Je n'ai pas réussi à calculer la variance pour les différentes caractéristique afin de me baser sur un seuil de variance.
 
++ J'ai ensuite opté pour l'utilisation de l'algorithme Random Forest (le choix des sous-ensembles parmis les caractéristique est effectué aussi). L'algorithme réussi bien à classifier les personnes ayant plus ou moins de $50k.
+
+Exemples de résultats obtenus:
+----
+```
+  >> RESULTS
+   > Training data fitting:
+Predicted       0      1
+Real                    
+0          187141      0
+1               0  12382
+   > Test data fitting:
+Predicted      0     1
+Real                  
+0          93576     0
+1              0  6186
+```
+```
+  >> RESULTS
+   > Training data fitting:
+Predicted       0      1
+Real                    
+0          187141      0
+1               0  12382
+   > Test data fitting:
+Predicted      0     1
+Real                  
+0          93576     0
+1             92  6094
+```
 
 
 

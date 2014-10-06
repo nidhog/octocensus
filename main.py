@@ -78,11 +78,35 @@ print '> Training data percentage: ',(float(nr_train)/(nr_train+nr_test))*100,'%
 #
 print '=='*15,' INITIALIZED ','=='*15
 
-## FEATURE SELECTION AND CLASSIFICATION
+### DATA PREPROCESSING
+print '_ Making DataFrame numbers out of Training and Testing set...'
+print '  (Please wait as this might take some time)'
+df_trainNum = data_to_numbers(df_train)
+df_testNum  = data_to_numbers( df_test)
+#
+
+## FEATURE SELECTION AND CLASSIFICATION USING RANDOM FORESTS
 print '=='*15,' CLASSIFICATION ','=='*15
 initial_feature_set = config.column_names
 selected_features   = initial_feature_set
 print '> Initial set of features: '
 print initial_feature_set
+print '_ Executing feature selection and classification...  (RF used)'
+rf_clf = RandomForestClassifier(n_jobs = 2) # n_jobs=2 : parallelizing over 2 cores
+# input values as enumerated type/categ var
+labels, uniques = pandas.factorize(df_trainNum['goal'])
+# fitting data to the classifier
+rf_clf.fit(df_trainNum[selected_features], labels)
+## PREDICTIONS
+print '=='*15,' PREDICTIONS ','=='*15
+print '_ Computing predictions on training set...'
+train_prediction = rf_clf.predict(df_trainNum[selected_features])
+print '_ Computing predictions on test set...'
+test_prediction  = rf_clf.predict( df_testNum[selected_features])
+print '  >> RESULTS'
+print '   > Training data fitting:'
+print pandas.crosstab(df_trainNum['goal'], train_prediction, rownames=['Real'], colnames=['Predicted'])
+print '   > Test data fitting:'
+print pandas.crosstab(df_testNum['goal'], test_prediction, rownames=['Real'], colnames=['Predicted'])
 
 
