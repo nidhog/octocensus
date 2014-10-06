@@ -19,6 +19,9 @@ La démarche suivie ainsi que les étapes seront explicitées ci dessous:
 
 Exemples de résultats obtenus:
 ----
+0: -50000$
+1: +50000$
+
 ```
   >> RESULTS
    > Training data fitting:
